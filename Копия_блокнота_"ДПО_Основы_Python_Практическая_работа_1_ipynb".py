@@ -1,0 +1,1537 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Olya-Shulga/Univercity/blob/main/%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F_%D0%B1%D0%BB%D0%BE%D0%BA%D0%BD%D0%BE%D1%82%D0%B0_%22%D0%94%D0%9F%D0%9E_%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_Python_%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1_ipynb%22.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Практическая работа №1. Введение в Python. Функции ввода-вывода. Основные типы и структуры данных**\n",
+        "\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "wfO8faq6ZSPR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Обучающийся:** *[Шульга Ольга Петровна]*  \n"
+      ],
+      "metadata": {
+        "id": "s1lvsaUa1kGY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "---"
+      ],
+      "metadata": {
+        "id": "Lmxdci5V1iUz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №1. Функция `print`**\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "APa2xjpZcAkk"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 1. Выведите на экран фразу **\"Добро пожаловать в мир Python!\"** с помощью функции `print`.\n"
+      ],
+      "metadata": {
+        "id": "omMWRtIod-k-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Добро пожаловать в мир Python!\")"
+      ],
+      "metadata": {
+        "id": "0R5R1jSwd_FT",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d0ec3cbf-dd83-4a05-f2cf-bc2726460887"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Добро пожаловать в мир Python!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 2. Выведите на экран результат сложения чисел **15** и **27**.\n"
+      ],
+      "metadata": {
+        "id": "A3ysPOjNd70e"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(15+27)"
+      ],
+      "metadata": {
+        "id": "5wnr_TY1eCmM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bb06ab53-696e-4e54-b6e6-66120059a4d1"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "42\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 3. Сохраните свое имя в переменную и выведите его на экран с помощью `print`."
+      ],
+      "metadata": {
+        "id": "RBkgp7Bjd9VL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name_student = \"Ольга\"\n",
+        "print(name_student)"
+      ],
+      "metadata": {
+        "id": "R7V70qsCeCxl",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4e7eb02d-0ba2-433e-e8d0-c8defdcddcb9"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ольга\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 4. Выведите на экран несколько строк текста, каждая из которых отображается с новой строки."
+      ],
+      "metadata": {
+        "id": "8q_iVvGed6VD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Приветики!\\n\\nЯ у мамы программист\\n\\n:)\")"
+      ],
+      "metadata": {
+        "id": "5uFFGny2eC_7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "cf1273c7-34e6-4121-fd2a-4a73169b3dcb"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Приветики!\n",
+            "\n",
+            "Я у мамы программист\n",
+            "\n",
+            ":)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 5. Выведите результат математического выражения с использованием f-строк, например:\n",
+        "\n",
+        "   ```python\n",
+        "   7 + 7 = 14\n",
+        "   ```\n"
+      ],
+      "metadata": {
+        "id": "ZwTwWIbpeO8B"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"7 + 7 = {7+7}\")"
+      ],
+      "metadata": {
+        "id": "f7cGPh5reXb8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "632b3909-922a-40af-b99c-1e07076da92b"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7 + 7 = 14\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №2. Функция `input`**\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YBCWUDzEdQcl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 1. Запросите у пользователя три разных числа и выведите их произведение.\n"
+      ],
+      "metadata": {
+        "id": "1JG7ncRffYpN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number_a = int(input(\"Введите первое число:\"))\n",
+        "number_b = int(input(\"Введите второе число:\"))\n",
+        "number_c = int(input(\"Введите третье число:\"))\n",
+        "\n",
+        "result = number_a*number_b*number_c\n",
+        "\n",
+        "print(f\"Результат произведения ваших чисел {number_a}, {number_b} и {number_c} равняется: {result}\")"
+      ],
+      "metadata": {
+        "id": "duI1IqytfZo3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "43774b66-8827-4d30-98e6-1eafeef8031a"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите первое число:3\n",
+            "Введите второе число:4\n",
+            "Введите третье число:9\n",
+            "Результат произведения ваших чисел 3, 4 и 9 равняется: 108\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 2. Попросите пользователя ввести свое ФИО, а затем выведите фамилию и инициалы.\n"
+      ],
+      "metadata": {
+        "id": "CGLKsG9yfXZf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "full_name = input(\"Введите своё ФИО:\")\n",
+        "\n",
+        "#Метод .strip() на случай лишних пробелов в начале и конце строки\n",
+        "last_name = full_name.strip().split(' ')[0]   #Фамилия\n",
+        "first_name = full_name.strip().split(' ')[1]  #Имя\n",
+        "patronymic = full_name.strip().split(' ')[2]  #Отчество\n",
+        "\n",
+        "print(f\"Ваша фамилия и инициалы: {last_name} {first_name[0]}.{patronymic[0]}.\")"
+      ],
+      "metadata": {
+        "id": "OhBXFkoffZ1l",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "33a98c96-465d-49a7-91c7-b0f68fa903ab"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите своё ФИО:Шульга Ольга Петровна\n",
+            "Ваша фамилия и инициалы: Шульга О.П.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 3. Получите от пользователя строку и символ, затем определите, сколько раз этот символ встречается в строке.\n"
+      ],
+      "metadata": {
+        "id": "FJd73_DSfWgf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user_string = input(\"Введите свою строку: \")\n",
+        "user_symbol = input(\"Введите символ, который хотите посчитать в строке: \")\n",
+        "\n",
+        "count = user_string.count(user_symbol)\n",
+        "\n",
+        "print(f\"Ваш символ '{user_symbol}' встречается в вашей строке: {count} раз.\")"
+      ],
+      "metadata": {
+        "id": "VAzbeJANfaAP",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "aa46c356-7040-4069-f83e-c613decc0e6b"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите свою строку: ujjjjj\n",
+            "Введите символ, который хотите посчитать в строке: u\n",
+            "Ваш символ 'u' встречается в вашей строке: 1 раз.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 4. Попросите пользователя ввести любимый цвет и выведите сообщение: **\"[Цвет] - красивый цвет!\"**.\n"
+      ],
+      "metadata": {
+        "id": "ZY_cf1nbfVbo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user_color = input(\"Введите ваш люмый цвет: \")\n",
+        "\n",
+        "print(f\"[{user_color.capitalize()}] - красивый цвет!\")"
+      ],
+      "metadata": {
+        "id": "vVoFM74MfaMe",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "50a3d674-ca05-442b-df5b-4dbde0aeb45c"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите ваш люмый цвет: Синий\n",
+            "[Синий] - красивый цвет!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 5. Получите от пользователя строку и выведите ее длину."
+      ],
+      "metadata": {
+        "id": "a6ekPIcOfUFK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user_str_for_len = input(\"Введите строку: \")\n",
+        "\n",
+        "print(f\"Длин вашей строки {len(user_str_for_len)} символов.\")"
+      ],
+      "metadata": {
+        "id": "psRmx_htfas2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b274254f-f7b5-4cf6-ff1d-cbaf3f1f01ed"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите строку: трах тибидох\n",
+            "Длин вашей строки 12 символов.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №3. Тип данных `int`**"
+      ],
+      "metadata": {
+        "id": "gQ99P3lxgEvA"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### Тип данных `int`\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "c-pHmy5NctvU"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Создайте переменную типа `int`, присвойте ей значение **42** и выведите на экран."
+      ],
+      "metadata": {
+        "id": "1YAKZCMuglIZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = 42\n",
+        "print(number)"
+      ],
+      "metadata": {
+        "id": "BpqJyc5GgmWz",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "37bd1d1c-9d63-488e-9fc1-9485a126b7b3"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "42\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Вычислите и выведите результат выражения **(17 * 3) + (10 / 2)** в виде целого числа."
+      ],
+      "metadata": {
+        "id": "J3FS1RtDgkCO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = int((17 * 3) + (10 / 2))\n",
+        "\n",
+        "print (result)"
+      ],
+      "metadata": {
+        "id": "YLIx8CCrgmkU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bb6bb397-7b9f-429e-85ad-1f587759444a"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "56\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. Преобразуйте строку **\"100\"** в целое число и добавьте к нему **25**."
+      ],
+      "metadata": {
+        "id": "91x1Lb4tgier"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number_str = \"100\"\n",
+        "\n",
+        "print(int(number_str)+25)"
+      ],
+      "metadata": {
+        "id": "vmEIAy1CgmzH",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4c0f32ba-1369-4f3b-b9bd-0d9c04e1def8"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "125\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. Проверьте тип переменной, которая хранит значение **7**, используя функцию `type()`."
+      ],
+      "metadata": {
+        "id": "Ua_0A7teghG0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "seven_int = 7\n",
+        "seven_str = \"7\"\n",
+        "\n",
+        "print(f\"Тип переменной seven_int = {seven_int} - это {type(seven_int)}\")\n",
+        "print(f\"Тип переменной seven_str = {seven_str} - это {type(seven_str)}\")"
+      ],
+      "metadata": {
+        "id": "56_CnKgGgnFi",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0bc3a2a8-c2f9-4087-a270-d96d7c3f3d02"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Тип переменной seven_int = 7 - это <class 'int'>\n",
+            "Тип переменной seven_str = 7 - это <class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5. Создайте две переменные целого типа, присвойте им значения и выведите их разницу."
+      ],
+      "metadata": {
+        "id": "JxK0fU_Wgf8J"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "first_number = 6\n",
+        "second_number = 7\n",
+        "\n",
+        "print(f\"{first_number} - {second_number} = {first_number - second_number}\")"
+      ],
+      "metadata": {
+        "id": "GFsY9xSkgnfv",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8a8ddf99-b095-48cd-d786-2c3856846e5e"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6 - 7 = -1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №4. Тип данных `float`**"
+      ],
+      "metadata": {
+        "id": "G-DskIxcg598"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 1. Запросите у пользователя вещественное число и выведите его квадрат.\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "W5liVT_kcwnQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number_float = float(input(\"Введите вещеситвенное число через точку: \"))\n",
+        "\n",
+        "print(f\"Квадрат вашего числа {number_float} = {number_float**2}\")"
+      ],
+      "metadata": {
+        "id": "S_i6OLwShHaH",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1917ce14-f718-47a6-acde-141532bfbe07"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите вещеситвенное число через точку: 3.4\n",
+            "Квадрат вашего числа 3.4 = 11.559999999999999\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 2. Запросите у пользователя вещественное число и округлите его до двух знаков после запятой."
+      ],
+      "metadata": {
+        "id": "rcXGDx7FhGZ7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number_float_2 = float(input(\"Введите вещеситвенное число через точку: \"))\n",
+        "\n",
+        "print(f\"Округлите вашего числа до двух знаков после запятой: {round(number_float_2, 2)}\")"
+      ],
+      "metadata": {
+        "id": "W534mNlphHoW",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "10b759de-d19f-4c08-83a0-e418adee5124"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите вещеситвенное число через точку: 3.145848483\n",
+            "Округлите вашего числа до двух знаков после запятой: 3.15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 3. Сложите два числа с плавающей точкой: **2.5** и **4.7**, выведите результат."
+      ],
+      "metadata": {
+        "id": "2HZIMG65hEwD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number_float_3 = 2.5\n",
+        "number_float_4 = 4.7\n",
+        "\n",
+        "print(f\"{number_float_3} + {number_float_4} = {number_float_3 + number_float_4}\")"
+      ],
+      "metadata": {
+        "id": "tNhoDLUqhH-Q",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a552f83b-b244-4dc5-e3d9-6f7f28578bd3"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2.5 + 4.7 = 7.2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 4. Преобразуйте градусы Цельсия, введенные пользователем, в Фаренгейты по формуле `F = C * 9/5 + 32`."
+      ],
+      "metadata": {
+        "id": "lbX1tt0_hDlr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "degree_celsius = int(input(\"Введите градусы Цельсия: \"))\n",
+        "degree_fahrenheit = degree_celsius * 9/5 + 32\n",
+        "\n",
+        "print(f\"{degree_celsius} градусов Цельсия - это {degree_fahrenheit} градусов Фаренгейта\")"
+      ],
+      "metadata": {
+        "id": "tjYR7aRHhILq",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "86e219d2-586c-4e0f-d969-5a9bbb89142f"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите градусы Цельсия: 26\n",
+            "26 градусов Цельсия - это 78.8 градусов Фаренгейта\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 5. Получите от пользователя длину и ширину прямоугольника, вычислите его площадь и периметр."
+      ],
+      "metadata": {
+        "id": "RhghSwthhCPJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "length = int(input(\"Введите длинну прямоугольника: \"))\n",
+        "width = int(input(\"Введите ширину прямоугольника: \"))\n",
+        "square = length * width\n",
+        "perimeter = 2 * (length + width)\n",
+        "\n",
+        "print(f\"\\nПлощадь прямоугольника: {square}\\nПериметр прямоугольника: {perimeter}\")"
+      ],
+      "metadata": {
+        "id": "GjKTKXmZhIaN",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b8ee63ac-dd24-4a38-f83f-23e085f48167"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите длинну прямоугольника: 5\n",
+            "Введите ширину прямоугольника: 6\n",
+            "\n",
+            "Площадь прямоугольника: 30\n",
+            "Периметр прямоугольника: 22\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №5. Тип данных `str`**"
+      ],
+      "metadata": {
+        "id": "CslTMbtXiWOP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####1. Создайте строку **\"Python - самый популярный язык программирования\"** и выведите ее.\n"
+      ],
+      "metadata": {
+        "id": "KUmla5cCieae"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_srt = \"Python - самый популярный язык программирования\"\n",
+        "print(my_srt)"
+      ],
+      "metadata": {
+        "id": "Q7kHloVXlMVB",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a1f79b1e-ddbd-440f-c2b1-8eb096f3bcbd"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python - самый популярный язык программирования\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####2. Выведите первый и последний символы строки **\"Привет, мир!\"**."
+      ],
+      "metadata": {
+        "id": "ypQL09raiehN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hi_string = \"Привет, мир!\"\n",
+        "print(hi_string[0], hi_string[-1])"
+      ],
+      "metadata": {
+        "id": "iVU99HAUlMpC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "cb3ebfac-7899-4bb7-bc08-cb2d9e8e70d0"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "П !\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####3. Соедините три строки: **\"МИИГАиК - \"** , **\"Лучший \"**, **\"ВУЗ!\"** выведите результат."
+      ],
+      "metadata": {
+        "id": "XxKbQhFkiw83"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str_1 = \"МИИГАиК - \"\n",
+        "str_2 = \"Лучший \"\n",
+        "str_3 = \"ВУЗ!\"\n",
+        "result_str = str_1 + str_2 + str_3\n",
+        "\n",
+        "print(result_str)"
+      ],
+      "metadata": {
+        "id": "4amk_NcnlM3T",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c2703ddf-7745-4504-9702-e60a6fba3dfb"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "МИИГАиК - Лучший ВУЗ!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####4. Преобразуйте строку **\"12345\"** в число и выведите тип полученного значения.\n"
+      ],
+      "metadata": {
+        "id": "MXOJX4g8ieoI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str_4 = \"12345\"\n",
+        "number_str_4 = int(str_4)\n",
+        "\n",
+        "print(type(number_str_4))"
+      ],
+      "metadata": {
+        "id": "t6Wvy7CZlNM2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "62d195c6-5d03-4947-f7a4-4a9b5aa04d6b"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####5. Сделайте все буквы строки **\"python is Fun\"** заглавными и выведите результат."
+      ],
+      "metadata": {
+        "id": "hhBQ-8gMc0Li"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str_5 = \"python is Fun\"\n",
+        "\n",
+        "print(str_5.upper())"
+      ],
+      "metadata": {
+        "id": "n3KLT91zlNgY",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "215e03d8-1533-4ba4-e25e-99bfb4995c83"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "PYTHON IS FUN\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №6. Тип данных `list`**"
+      ],
+      "metadata": {
+        "id": "ud5LmPUPlXND"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####1. Создайте список из чисел **[10, 20, 30, 40, 50]** и выведите его.\n"
+      ],
+      "metadata": {
+        "id": "ZDkNefxXlXND"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list = [10, 20, 30, 40, 50]\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "id": "G6fH9gBLlzI2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "89c3170c-c39a-4249-dcba-4dbac81d9b73"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30, 40, 50]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####2. Добавьте в список строку **\"новый элемент\"** и выведите обновленный список.\n"
+      ],
+      "metadata": {
+        "id": "oDUtdPi-lo7n"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list.append(\"новый элемент\")\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "id": "6QhNXffflzXT",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a239e442-9783-4615-a243-a3ff0f5af14d"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30, 40, 50, 'новый элемент']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####3. Из списка `['python', 'java', 'c++', 'ruby', 'perl']` выведите элементы с 2-го по 4-й включительно.\n"
+      ],
+      "metadata": {
+        "id": "BZlOVdc4lo-O"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list_2 = ['python', 'java', 'c++', 'ruby', 'perl']\n",
+        "print(my_list_2[1:4])"
+      ],
+      "metadata": {
+        "id": "lU12ExUElzjH",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "882b124d-9d51-4cd5-88ae-eca545627cfd"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['java', 'c++', 'ruby']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####4. Создайте пустой список, добавьте в него три любых значения и выведите итоговый список.\n"
+      ],
+      "metadata": {
+        "id": "0dZPxhU_lpCN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list_3 = []\n",
+        "my_list_3.append(1)\n",
+        "my_list_3.append(\"один\")\n",
+        "my_list_3.append(1.0)\n",
+        "\n",
+        "print(my_list_3)"
+      ],
+      "metadata": {
+        "id": "pRQ1BHKUlzud",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "29569f19-8eaf-4a21-b2cf-e0174ddf0d81"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 'один', 1.0]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####5. Измените второй элемент списка **[1, 2, 3, 4, 5]** на число **200** и выведите список."
+      ],
+      "metadata": {
+        "id": "o104mH_plpJl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list_4 = [1, 2, 3, 4, 5]\n",
+        "my_list_4.insert(1, 200)\n",
+        "print(my_list_4)"
+      ],
+      "metadata": {
+        "id": "ur_sqeAYlz-0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "46a9cc88-1a1b-4126-fe20-bef32540fb59"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 200, 2, 3, 4, 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №7. Тип данных `tuple`**"
+      ],
+      "metadata": {
+        "id": "w7lcJPx9mhLe"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####1. Создайте кортеж из чисел **(1, 2, 3, 4, 5)** и выведите его на экран.\n"
+      ],
+      "metadata": {
+        "id": "HqmF9aMWmeon"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_tuple = (1, 2, 3, 4, 5)\n",
+        "print(my_tuple)"
+      ],
+      "metadata": {
+        "id": "hGuk1KfHn7V7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7ea06b19-90bb-44d1-ab4f-55f1eb6df5b9"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, 2, 3, 4, 5)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####2. Попробуйте изменить первый элемент кортежа и объясните в комментариях к программе, что произошло.\n"
+      ],
+      "metadata": {
+        "id": "_QQf4g6gmerF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_tuple.insert(0, 3)   # Это вызовет ошибку: AttributeError:'tuple' object has no attribute 'insert'\n",
+        "\n",
+        "# Кортежи являются неизменяемыми структурами данных.\n",
+        "# Это значит, что после создания кортежа нельзя изменить его элементы,\n",
+        "# добавить новые или удалить существующие.\n",
+        "\n",
+        "# У кортежей нет метода .insert(), потому что они не поддерживают изменение содержимого.\n",
+        "\n",
+        "# Попытка изменить первый элемент напрямую:\n",
+        "my_tuple[0] = 10\n",
+        "# тоже приведёт к ошибке: TypeError: 'tuple' object does not support item assignment\n",
+        "\n",
+        "# Вывод: кортежи нельзя модифицировать. Если нужно изменить последовательность,\n",
+        "# лучше использовать списки."
+      ],
+      "metadata": {
+        "id": "sZcbKwV_n7vA"
+      },
+      "execution_count": 50,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####3. Преобразуйте кортеж в строку и выведите результат.\n"
+      ],
+      "metadata": {
+        "id": "6fMHK5femevO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_tuple_str = str(my_tuple)\n",
+        "print(my_tuple_str, type(my_tuple_str))"
+      ],
+      "metadata": {
+        "id": "AudeNNOin77h",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0457c63b-ffb3-4a37-b86e-ea2c85faa9fb"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, 2, 3, 4, 5) <class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####4. Проверьте, содержится ли определенный элемент в кортеже, выведите соответствующее сообщение.\n"
+      ],
+      "metadata": {
+        "id": "HOOFXQYtmeyG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if 4 in my_tuple:\n",
+        "    print(\"Элемент 4 содержится в кортеже\")\n",
+        "else:\n",
+        "    print(\"Элемент 4 не содержится в кортеже\")"
+      ],
+      "metadata": {
+        "id": "PlPkzGCon8N2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1d84fbf6-6a37-4884-971b-8e1b51795648"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Элемент 4 содержится в кортеже\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####5. Создайте кортеж, состоящий из нескольких одинаковых элементов, и найдите их количество с помощью метода `count()`.\n"
+      ],
+      "metadata": {
+        "id": "HSi5wD3xme3I"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_tuple_2 = (1, 1, 1, 1, 2, 3, 4)\n",
+        "print(f\"Число 1 содержится {my_tuple_2.count(1)} раз(-а) в контеже {my_tuple_2}\")"
+      ],
+      "metadata": {
+        "id": "G5eyJNkZn8aw",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "eaa25ab1-b772-4d35-d0e8-94e5901ec4cd"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Число 1 содержится 4 раз(-а) в контеже (1, 1, 1, 1, 2, 3, 4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## **Блок заданий №8. Тип данных `dict`**"
+      ],
+      "metadata": {
+        "id": "v7nByOSzn6Gs"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####1. Создайте словарь с данными о себе: ключи **\"имя\"**, **\"возраст\"**, **\"город\"**; выведите его.\n"
+      ],
+      "metadata": {
+        "id": "SdH7l87WoNxs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_dict = {\n",
+        "    \"имя\":\"Оля\",\n",
+        "    \"возраст\":25,\n",
+        "    \"город\":\"Москва\",\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "G_5mPREsoO__"
+      },
+      "execution_count": 55,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####2. Выведите значение по ключу **\"имя\"** из созданного словаря.\n"
+      ],
+      "metadata": {
+        "id": "nsoYMyesoMxq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(my_dict[\"имя\"])"
+      ],
+      "metadata": {
+        "id": "OL_waQuioPSG",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "98c99a18-bbd5-4b3b-ef93-cc5a5c030db3"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Оля\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####3. Добавьте в словарь новый ключ **\"профессия\"** со значением и выведите словарь.\n"
+      ],
+      "metadata": {
+        "id": "0T_miCFjoLhI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_dict.update({\"профессия\": \"младший научный сотрудник\"})\n",
+        "print(my_dict)"
+      ],
+      "metadata": {
+        "id": "5LOqyJAHoPfn",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bd0519c3-200c-4805-c76d-ed8b57b11b6d"
+      },
+      "execution_count": 60,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'имя': 'Оля', 'возраст': 25, 'город': 'Москва', 'профессия': 'младший научный сотрудник'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####4. Удалите из словаря ключ **\"город\"** и выведите обновленный словарь.\n"
+      ],
+      "metadata": {
+        "id": "QPwxJK74oKZ3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_dict.pop(\"город\")\n",
+        "print(my_dict)"
+      ],
+      "metadata": {
+        "id": "3dPMpP1koPrR",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "70194b40-3762-4286-9df2-cb6101421152"
+      },
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'имя': 'Оля', 'возраст': 25, 'профессия': 'младший научный сотрудник'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####5. Создайте пустой словарь и добавьте в него пару ключ-значение, введенных пользователем."
+      ],
+      "metadata": {
+        "id": "7UDgxikGoJXz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "new_dict = {}\n",
+        "key_from_user = input(\"Введите ключь для словаря: \")\n",
+        "value_from_user = input(\"Введите значение для ключа: \")\n",
+        "new_dict.update({key_from_user: value_from_user})\n",
+        "\n",
+        "print(new_dict)"
+      ],
+      "metadata": {
+        "id": "AofDComvoP2d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "945670a4-2d48-443b-937f-c761cf17c4df"
+      },
+      "execution_count": 63,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите ключь для словаря: имя животного\n",
+            "Введите значение для ключа: Мысшь\n",
+            "{'имя животного': 'Мысшь'}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
